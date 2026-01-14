@@ -22,7 +22,7 @@ Ensure the following are installed on your system:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/Madhiseelan/CarbCalculator.git
+   git clone https://github.com/Madhiseelan/CarbCalculator.git
 
 ## Navigate to the project directory:
 cd your-repo-name
