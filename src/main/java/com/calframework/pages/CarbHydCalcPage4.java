@@ -74,7 +74,8 @@ public class CarbHydCalcPage4 extends AbstractPage {
     @FindBy(xpath = "//h1[normalize-space()='Free Online Calculators']")
     private WebElement freeOnlineCalculatorsHeader;
 
-
+    @FindBy(css = "img[title='Save this calculation']")
+    private WebElement saveCalculationIcon;
 
     public void signOutClick(){
         signOutLink.click();
@@ -101,6 +102,12 @@ public class CarbHydCalcPage4 extends AbstractPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(recommendedResultTable));
         return recommendedResultTable.isDisplayed();
+    }
+
+    public boolean isSaveButtonDisplayed(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(saveCalculationIcon));
+        return saveCalculationIcon.isDisplayed();
     }
 
     public boolean isFreeOnlineCalculatorsHeaderDisplayed() {

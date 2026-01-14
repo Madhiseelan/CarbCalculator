@@ -44,7 +44,6 @@ public class CarbHydCalcPageTest4 extends BaseTest {
         carbHydCalcPage4.setHeight("175");
         carbHydCalcPage4.setMetricUnitsWeight("75");
         carbHydCalcPage4.setActivity("Moderate: exercise 4-5 times/week");
-        //loginPage.login(testData.getUsername(), testData.getPassword());
         carbHydCalcPage4.buttonClick();
         // Assert that the results header is displayed
         carbHydCalcPage4.resultHeaderCheck();
@@ -54,6 +53,9 @@ public class CarbHydCalcPageTest4 extends BaseTest {
 
         //Assert that the Results table is displayed
         Assert.assertTrue(carbHydCalcPage4.isResultTableDisplayed(), "Result table is not displayed");
+
+        //Assert that the Save Button is displayed
+        Assert.assertTrue(carbHydCalcPage4.isSaveButtonDisplayed(), "Save button is not displayed");
     }
 
     /**
@@ -77,6 +79,9 @@ public class CarbHydCalcPageTest4 extends BaseTest {
 
         //Assert that the Results table is displayed
         Assert.assertTrue(carbHydCalcPage4.isResultTableDisplayed(), "Result table is not displayed");
+
+        //Assert that the Save Button is displayed
+        Assert.assertTrue(carbHydCalcPage4.isSaveButtonDisplayed(), "Save button is not displayed");
     }
 
     @Test(alwaysRun = true)
